@@ -109,8 +109,8 @@ Command History
 
 Command Action
 
-Ctrl + R Search through previously used commands
-history n Shows the previous commands you've typed. Add a number to limit to the last n items
+Ctrl + R Search through previously used commands history
+n Shows the previous commands you've typed. Add a number to limit to the last n items
 ![value] Execute the last command typed that starts with a value
 !! Execute the last command type
 
