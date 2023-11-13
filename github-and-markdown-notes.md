@@ -10,61 +10,57 @@
 | [command] -h  | Get help about a command                                                |
 | man [command] | Show the help manual for a command                                      |
 
-Key Combination Shortcut
+| Key Combination Shortcut | Command Action                                                     |
+| ------------------------ | ------------------------------------------------------------------ |
+| Tab                      | Auto-Complete file and folder names                                |
+| Ctrl +                   | A Go to the beginning of the line that you are currently typing on |
+| Ctrl + E                 | Go to the end of the line that you are currently typing on         |
+| Ctrl + U                 | Clear the line before the cursor                                   |
+| Ctrl + K                 | Clear the line after the cursor                                    |
+| Ctrl + W                 | Delete the word before the cursor                                  |
+| Ctrl + T                 | Swap the last two characters before the cursor                     |
+| Esc + T                  | Swap the last two words before the cursor                          |
+| Ctrl + L                 | Clear the screen                                                   |
+| Ctrl + C                 | Kill any Unix program that is running                              |
+| Ctrl + D                 | Exit the current shell                                             |
+| Option + Right Key       | Move the cursor forwards one word                                  |
+| Option + Left Key        | Move the cursor backwards one word                                 |
+| Ctrl + F                 | Move the cursor one character forwards                             |
+| Ctrl + B                 | Move the cursor one character Backwards                            |
+| Ctrl + Y                 | Paste whatever was cut by the previous command                     |
+| Ctrl + Z                 | Make your running process into a suspended background process      |
+| Ctrl + \_                | Undo the previous command                                          |
+| Option + Shift + Cmd + C | Copy plain text                                                    |
+| Shift + Cmd + V          | Paste the selection                                                |
+| exit                     | End a shell session                                                |
 
-Command Action
+| Change Directory | Command Action                                |
+| ---------------- | --------------------------------------------- |
+| cd               | Home directory                                |
+| cd [folder]      | Change directory, e.g. cd Documents           |
+| cd ~             | Home directory                                |
+| cd/              | Root of the drive                             |
+| cd -             | Previous directory or folder you last browsed |
+| pwd              | Show your working directory                   |
+| cd ..            | Move up to the parent directory               |
+| cd../..          | Move up two levels                            |
 
-Tab Auto-Complete file and folder names
-Ctrl + A Go to the beginning of the line that you are currently typing on
-Ctrl + E Go to the end of the line that you are currently typing on
-Ctrl + U Clear the line before the cursor
-Ctrl + K Clear the line after the cursor
-Ctrl + W Delete the word before the cursor
-Ctrl + T Swap the last two characters before the cursor
-Esc + T Swap the last two words before the cursor
-Ctrl + L Clear the screen
-Ctrl + C Kill any Unix program that is running
-Ctrl + D Exit the current shell
-Option + Right Key Move the cursor forwards one word
-Option + Left Key Move the cursor backwards one word
-Ctrl + F Move the cursor one character forwards
-Ctrl + B Move the cursor one character Backwards
-Ctrl + Y Paste whatever was cut by the previous command
-Ctrl + Z Make your running process into a suspended background process
-Ctrl + \_ Undo the previous command
-Option + Shift + Cmd + C Copy plain text
-Shift + Cmd + V Paste the selection
-exit End a shell session
-
-Change Directory
-
-Command Action
-
-cd Home directory
-cd [folder] Change directory, e.g. cd Documents
-cd ~ Home directory
-cd/ Root of the drive
-cd - Previous directory or folder you last browsed
-pwd Show your working directory
-cd .. Move up to the parent directory
-cd../.. Move up two levels
-
-List Directory Contents
-
-Command Action
-
-ls Display the name of files and subdirectories in the directory
-ls -C Force multi-column output of the listing
-ls -a List all entries including those with . and ..
-ls -1 Output the list of files in one entry per line format
-ls -F Display a / immediately after each path that is a directory, \* after executable programs or scripts, and @ after a symbolic link
-ls -S Sort files or entries by size
-ls -l List in a long format. Includes file mode, owner and group name, date and time file was modified, pathname, and more
-ls -l / List of the file system from root with symbolic links
-ls -lt List the files sorted by time modified (most recent first)
-ls -lh Long listing with human readable file sizes in KB, MB, or GB
-ls -lo List the file names with size, owner, and flags
-ls -la List detailed directory contents, including hidden files
+| List Directory Contents | Command Action                                                       |
+| ----------------------- | -------------------------------------------------------------------- |
+| ls                      | Display the name of files and subdirectories in the directory        |
+| ls -C                   | Force multi-column output of the listing                             |
+| ls -a                   | List all entries including those with . and ..                       |
+| ls -1                   | Output the list of files in one entry per line format                |
+| ls -F                   | Display a / immediately after each path that is a directory,         |
+|                         | \* after executable programs or scripts, and @ after a symbolic link |
+| ls -S                   | Sort files or entries by size                                        |
+| ls -l                   | List in a long format. Includes file mode, owner and group name,     |
+|                         | date and time file was modified, pathname, and more                  |
+| ls -l /                 | List of the file system from root with symbolic links                |
+| ls -lt                  | List the files sorted by time modified (most recent first)           |
+| ls -lh                  | Long listing with human readable file sizes in KB, MB, or GB         |
+| ls -lo                  | List the file names with size, owner, and flags                      |
+| ls -la                  | List detailed directory contents, including hidden files             |
 
 File size and disk space
 
