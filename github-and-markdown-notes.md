@@ -10,7 +10,7 @@
 | [command] -h  | Get help about a command                                                |
 | man [command] | Show the help manual for a command                                      |
 
-Key Combination Shortcuts
+Key Combination Shortcut
 
 Command Action
 
