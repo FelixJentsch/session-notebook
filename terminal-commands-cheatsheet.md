@@ -1,16 +1,14 @@
-Basics
-
-Command Action
-
-/ Top level directory
-. Current directory
-.. Parent directory
-~ Home directory
-sudo [any command] Run a command with the security privilege of a super user
-nano [file] Opens the Terminal editor
-open [file] Opens a file
-[command] -h Get help about a command
-man [command] Show the help manual for a command
+| Basics        | Command Action                                                          |
+| ------------- | ----------------------------------------------------------------------- |
+| /             | Top level directory                                                     |
+| .             | Current directory                                                       |
+| ..            | Parent directory                                                        |
+| ~             | Home directory                                                          |
+| sudo          | [any command] Run a command with the security privilege of a super user |
+| nano          | [file] Opens the Terminal editor                                        |
+| open          | [file] Opens a file                                                     |
+| [command] -h  | Get help about a command                                                |
+| man [command] | Show the help manual for a command                                      |
 
 Key Combination Shortcuts
 

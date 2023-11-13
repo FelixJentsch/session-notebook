@@ -1,0 +1,189 @@
+Basics Command Action
+
+/ Top level directory
+. Current directory
+.. Parent directory
+~ Home directory
+sudo [any command] Run a command with the security privilege of a super user
+nano [file] Opens the Terminal editor
+open [file] Opens a file
+[command] -h Get help about a command
+man [command] Show the help manual for a command
+
+Key Combination Shortcuts
+
+Command Action
+
+Tab Auto-Complete file and folder names
+Ctrl + A Go to the beginning of the line that you are currently typing on
+Ctrl + E Go to the end of the line that you are currently typing on
+Ctrl + U Clear the line before the cursor
+Ctrl + K Clear the line after the cursor
+Ctrl + W Delete the word before the cursor
+Ctrl + T Swap the last two characters before the cursor
+Esc + T Swap the last two words before the cursor
+Ctrl + L Clear the screen
+Ctrl + C Kill any Unix program that is running
+Ctrl + D Exit the current shell
+Option + Right Key Move the cursor forwards one word
+Option + Left Key Move the cursor backwards one word
+Ctrl + F Move the cursor one character forwards
+Ctrl + B Move the cursor one character Backwards
+Ctrl + Y Paste whatever was cut by the previous command
+Ctrl + Z Make your running process into a suspended background process
+Ctrl + \_ Undo the previous command
+Option + Shift + Cmd + C Copy plain text
+Shift + Cmd + V Paste the selection
+exit End a shell session
+
+Change Directory
+
+Command Action
+
+cd Home directory
+cd [folder] Change directory, e.g. cd Documents
+cd ~ Home directory
+cd/ Root of the drive
+cd - Previous directory or folder you last browsed
+pwd Show your working directory
+cd .. Move up to the parent directory
+cd../.. Move up two levels
+
+List Directory Contents
+
+Command Action
+
+ls Display the name of files and subdirectories in the directory
+ls -C Force multi-column output of the listing
+ls -a List all entries including those with . and ..
+ls -1 Output the list of files in one entry per line format
+ls -F Display a / immediately after each path that is a directory, \* after executable programs or scripts, and @ after a symbolic link
+ls -S Sort files or entries by size
+ls -l List in a long format. Includes file mode, owner and group name, date and time file was modified, pathname, and more
+ls -l / List of the file system from root with symbolic links
+ls -lt List the files sorted by time modified (most recent first)
+ls -lh Long listing with human readable file sizes in KB, MB, or GB
+ls -lo List the file names with size, owner, and flags
+ls -la List detailed directory contents, including hidden files
+
+File size and disk space
+
+Command Action
+
+du List usage for each subdirectory and its contents
+du -sh [folder] Human readable output of all files in a directory
+du -s Display an entry for each specified file
+df -h Calculate your system's free disk space
+df -H Calculate free disk space in powers of 1,000
+
+File and Directory Management
+
+Command Action
+
+mkdir <dir> Create new folder named <dir>
+mkdir -p <dir>/<dir> Create nested folders
+mkdir <dir1> <dir2> <dir3> Create several folders at once
+mkdir "<dir>" Create a folder with a space in the filename
+rmdir <dir> Delete a folder (only works on empty folders)
+rm -R <dir> Delete a folder and its contents
+touch <file> Create a new file without any extension
+cp <file> <dir> Copy a file to the folder
+cp <file> <newfile> Copy a file to the current folder
+cp <file>~/<dir>/<newfile> Copy a file to the folder and rename the copied file
+cp -R <dir> <"new dir"> Copy a folder to a new folder with spaces in the filename
+cp -i <file><dir> Prompts you before copying a file with a warning overwrite message
+cp <file1> <file2> <file3>/Users/<dir> Copy multiple files to a folder
+ditto -V [folder path][new folder] Copy the contents of a folder to new folder. In here "-V" print a line of status for every file copied
+rm <file> Delete a file (This deletes the file permanently; use with caution.)
+rm -i <file> Delete a file only when you give confirmation
+rm -f <file> Force removal without confirmation
+rm <file1> <file2> <file3> Delete multiple files without any confirmation
+mv <file> <newfilename> Move/rename
+mv <file> <dir> Move a file to the folder, possibly by overwriting an existing file
+mv -i <file> <dir> Optional -i flag to warn you before overwriting the file
+mv \*.png ~/<dir> Move all PNG files from current folder to a different folder
+
+Command History
+
+Command Action
+
+Ctrl + R Search through previously used commands history
+n Shows the previous commands you've typed. Add a number to limit to the last n items
+![value] Execute the last command typed that starts with a value
+!! Execute the last command type
+
+Permissions
+
+Command Action
+
+ls -ld Display the default permission for a home directory
+ls -ld/<dir> Display the read, write, and access permission of a particular folder
+chmod 755 <file> Change the permission of a file to 755
+chmod -R 600 <dir> Change the permission of a folder (and its contents) to 600
+chown <user>:<group> <file> Change the ownership of a file to user and group. Add -R to include folder contents
+
+Processes
+
+Command Action
+
+ps -ax Output currently running processes. Here, a shows processes from all users and x shows processes that are not connected with the Terminal
+ps -aux Shows all the processes with %cpu, %mem, page in, PID, and command
+top Display live information about currently running processes
+top -ocpu -s 5 Display processes sorted by CPU usage, updating every 5 seconds
+top -o rsize Sort top by memory usage
+kill PID Quit process with ID <PID>. You'll see PID as a column in the Activity Monitor
+
+Network
+
+Command Action
+
+ping <host> Ping host and display status
+whois <domain> Output whois info for a domain
+curl -O <url/to/file> Download file via HTTP, HTTPS, or FTP
+ssh <username>@<host> Establish SSH connection to <host> with user <username>
+scp <file><user>@<host>:/remote/path Copy <file> to a remote <host>
+arp -a View a list of all devices on your local network. It will show you the IP and MAC address of all the devices
+ifconfig en0 View your device IP and MAC address
+traceroute [hostname] Identify the path and the hops traversed by the packets from your device to the destination address
+
+Homebrew
+
+Command Action
+
+brew doctor Check brew for potential problems
+brew help List of useful homebrew formula and cask commands
+brew list --formula List only installed formulas
+brew list --cask List only installed cask
+brew outdated --formula Search for outdated formula
+brew outdated --cask Search for outdated cask
+brew pin [installed_formula] Pin a formula from getting upgraded
+brew unpin [installed_formula] Unpin to upgrade a package
+brew cleanup Remove stale lock files and outdated packages for all formula and casks.
+
+Environment Variable or Path
+
+Command Action
+
+printenv Display a list of currently set environment variables. Also tells you which shell you're using
+$echo	Tells the terminal to print something and show it to you
+echo $PATH	Check the value of the PATH variable which storea a list of directories with executable files
+echo $PATH >path.txt	Export the path directory to a text file
+export PATH=$PATH:absolute/path to/program/ Execute a program via terminal only in your current session
+
+Search
+
+Command Action
+
+find <dir> -name <"file"> Find all files named <file> inside <dir>. Use wildcards (\*) to search for parts of filenames
+grep "<text>" <file> Output all occurrences of <text> inside <file> (add -i for case insensitivity)
+grep -rl "<text>" <dir> Search for all files containing <text> inside <dir>
+
+Output
+
+Command Action
+
+cat <file> Output the content of <file>
+less <file> Output the contents of <file> using the less command that supports pagination and more
+head <file> Output the first 10 lines of <file>
+<cmd> > > <file> Appends the output of <cmd> to <file>
+<cmd> > <file> Direct the output of <cmd> into <file>
