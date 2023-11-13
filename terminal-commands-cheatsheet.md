@@ -1,16 +1,14 @@
-Basics
-
-Command Action
-
-/ Top level directory
-. Current directory
-.. Parent directory
-~ Home directory
-sudo [any command] Run a command with the security privilege of a super user
-nano [file] Opens the Terminal editor
-open [file] Opens a file
-[command] -h Get help about a command
-man [command] Show the help manual for a command
+| Basics        | Command Action                                                          |
+| ------------- | ----------------------------------------------------------------------- |
+| /             | Top level directory                                                     |
+| .             | Current directory                                                       |
+| ..            | Parent directory                                                        |
+| ~             | Home directory                                                          |
+| sudo          | [any command] Run a command with the security privilege of a super user |
+| nano          | [file] Opens the Terminal editor                                        |
+| open          | [file] Opens a file                                                     |
+| [command] -h  | Get help about a command                                                |
+| man [command] | Show the help manual for a command                                      |
 
 Key Combination Shortcuts
 
@@ -109,8 +107,8 @@ Command History
 
 Command Action
 
-Ctrl + R Search through previously used commands
-history n Shows the previous commands you've typed. Add a number to limit to the last n items
+Ctrl + R Search through previously used commands history
+n Shows the previous commands you've typed. Add a number to limit to the last n items
 ![value] Execute the last command typed that starts with a value
 !! Execute the last command type
 
